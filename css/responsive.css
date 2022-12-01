@@ -1,0 +1,283 @@
+/* responsive */
+
+.sp480{display: none;}
+
+
+
+@media screen and (min-width: 769px) {
+.sp,
+.btn_open{display: none;}
+
+nav ul li:not(:last-child){margin-right: 30px;}
+.project_gallery ul li:nth-child(3n + 3),
+.project_list_content ul li:nth-child(3n + 3){margin-right: 0;}
+
+/* HOVER */
+.project_gallery ul li a:hover,
+.sec_pj_list ul li .img:hover,
+footer .foot_info .sns a:hover{opacity: 0.7;}
+
+.design_list ul li:hover .des::before,
+.project_list_content ul li:hover .des::before{opacity: 0.5;}
+
+a:hover,
+.breadcrumbs ul li a:hover,
+.project_tab .tabs li:hover,
+nav ul li a:hover{color: var(--brown);}
+.sec_project .ttl a:hover{text-decoration: underline;}
+.under nav ul li.bg a:hover{background: var(--main);color: #fff;}
+.sec_review .slick-dots li:hover,
+.sec_pj_list .slick-dots li:hover{background: #999;border-color: #999;}
+.contact_content .btn_submit button:hover{background-color: #fff;color: var(--main);cursor: pointer;}
+
+/* PC ONLY */
+footer .foot_info .tel a{pointer-events: none;}
+
+
+.contact_form_box dl.od1{order:0}
+.contact_form_box dl.od2{order:2}
+.contact_form_box dl.od3{order:4}
+.contact_form_box dl.od4{order:6}
+.contact_form_box dl.od5{order:1}
+.contact_form_box dl.od6{order:3}
+.contact_form_box dl.od7{order:5}
+
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd{font-size: 14px;}
+
+#wrapper,
+header,
+main,
+footer,
+.inner {width: 100% !important;min-width: inherit !important;}
+.inner {box-sizing: border-box;padding: 0 15px;}
+.sp {display: block;}
+.pc {display: none;}
+/*---*/
+
+/*==========================================================================*/
+/*                               ALL                                        */
+/*==========================================================================*/
+header .head_content{padding: 0 0 0 15px;height: 60px;}
+header #logo{width: 100px;}
+
+nav{position: fixed;top: 60px;left: -100%;opacity: 0;width: 100%;height: calc(100vh - 60px);background: var(--org);justify-content: flex-start;flex-direction: column;padding: 0 0 60px;margin: 0;background: var(--brown);transition: all ease 0.3s;}
+nav.active{left: 0;opacity: 1;}
+nav ul{display: flex;flex-direction: column;width: 100%;border-top: 1px solid #fff;}
+nav ul li{width: 100%;margin-right: 0}
+nav ul li a{padding: 15px;border-bottom: 1px solid #fff;display: block;font-size: 16px;color: #fff;}
+nav ul li.bg a{padding: 15px;}
+
+/*==========================================================================*/
+/*                               MAIN                                       */
+/*==========================================================================*/
+main{margin-top: 60px;}
+[data-aos]{transition-delay: 0s !important;}
+
+.ttl{text-align: center;margin: 0 auto 15px;}
+.ttl h3{text-align: center;font-size: 24px}
+
+#btn_top{width: 44px;}
+section{padding: 50px 0;}
+section::before{top: 100px;}
+main::before{left: 15px;}
+main::after{right: 15px;}
+
+/* SEC ABOUT */
+.sec_about_ct{margin-top: 50px;flex-wrap: wrap;justify-content: center;}
+.sec_about_ct .title{font-size: 36px;text-align: center}
+.sec_about_ct .des{width: 100%;}
+.sec_about_ct .des::before{top: calc(50% - 230px);}
+
+/* SEC PROJECT */
+.sec_project{margin-top: 0;}
+.sec_pj_list ul li .img{height: auto;aspect-ratio: 16/9;margin-bottom: 15px;}
+.sec_pj_list ul li .name{font-size: 20px;}
+.sec_pj_list ul li .link{margin-top: 0;}
+.sec_pj_list .slick-dots{margin-top: 15px;}
+.sec_pj_list .slick-dots li{margin: 0 5px;}
+
+/* SEC SERVICE */
+.sec_service{margin-top: 0;}
+.sec_service_list ul li{flex-direction: column;align-items: center;}
+.sec_service_list ul li .des{width: 640px;max-width: 100%;padding-top: 0;}
+.sec_service_list ul li .big{margin: 15px 0;font-size: 24px;}
+.sec_service_list ul li .numb{font-size: 48px;text-shadow: rgb(205, 140, 82) 2px 0px 0px, rgb(205, 140, 82) 1.75517px 0.958851px 0px, rgb(205, 140, 82) 1.0806px 1.68294px 0px, rgb(205, 140, 82) 0.141474px 1.99499px 0px, rgb(205, 140, 82) -0.832294px 1.81859px 0px, rgb(205, 140, 82) -1.60229px 1.19694px 0px, rgb(205, 140, 82) -1.97998px 0.28224px 0px, rgb(205, 140, 82) -1.87291px -0.701566px 0px, rgb(205, 140, 82) -1.30729px -1.5136px 0px, rgb(205, 140, 82) -0.421592px -1.95506px 0px, rgb(205, 140, 82) 0.567324px -1.91785px 0px, rgb(205, 140, 82) 1.41734px -1.41108px 0px, rgb(205, 140, 82) 1.92034px -0.558831px 0px;}
+.sec_service_list .slick-dots{padding: 0 15px;}
+.sec_service_list .slick-dots::before{left: 0;width: calc(100vw - 30px);}
+
+/* SEC WHY */
+.sec_why{margin-top: 0;}
+.sec_why_list{margin-top: 50px;}
+.sec_why_list ul{flex-direction: column;margin: 0 1px 0 40px;padding: 0}
+.sec_why_list ul li{width: calc(100% + 30px);top: inherit;display: flex;align-items: center;justify-content: flex-start;padding: 30px 0;left: -40px;font-size: 16px;}
+.sec_why_list ul li p{margin-bottom: 0;}
+.sec_why_list ul li .icon{margin: 0 15px 0 0;flex-shrink: 0;}
+.sec_why_list ul li:not(:last-child)::before{left: 30px;right: inherit;top: inherit;bottom: -9px;}
+.sec_why_list ul li .numb{margin: 0 10px 0 0;font-size: 24px;}
+.sec_why_list ul li .des{width: calc(100% - 120px);text-align: left}
+
+/* SEC REVIEW */
+.sec_review{margin-top: 0;padding-bottom: 50px;}
+.sec_review .inner{display: flex;flex-direction: column;}
+.sec_review .review_img{position: relative;top: inherit;right: inherit;max-width: 100%;order:3;margin: 50px auto 0;}
+.review_list{margin-top: 50px;padding: 0 15px;}
+.review_list ul{width: 100%;}
+.review_list ul li .italic{margin-bottom: 20px;}
+.sec_review .slick-dots{margin-top: 0;}
+
+/* FOOTER */
+footer{padding: 50px 15px;flex-wrap: wrap;}
+footer .foot_slogan{width: 100%;justify-content: center;padding: 0;margin:0;align-items: center;}
+footer .foot_slogan .f_logo{margin:0 15px 0 0}
+footer .foot_slogan .big{font-size: 24px;width: auto;}
+footer .foot_slogan .big span{font-size: 28px;}
+footer .foot_info{padding-top: 0;margin-top: 30px;width: 100%;text-align: center}
+footer .foot_info p{justify-content: center;}
+footer .foot_info .big,
+footer .foot_info .add{margin-bottom: 15px;}
+footer .foot_info .tel{margin-bottom: 30px;}
+
+/* SERVICE PAGE */
+.service_top{height: 400px;padding-bottom: 30px;}
+.service_top .title{font-size: 36px;}
+.our_service_list{margin-top: 50px;flex-wrap: wrap;}
+.our_service_list::before{width: 100%;left: 0;top: 45px;}
+.our_service_list dl{width: 32%;}
+.our_service_list dt{margin-bottom: 40px;}
+.our_service_list dt::before{left: 2px;bottom: -20px;}
+.our_service_list dd p:last-child{margin-bottom: 0;}
+
+.service_insurance{margin-top: 0;padding-bottom: 50px;}
+.insurance_content{flex-wrap: wrap;justify-content: center;}
+.insurance_img{}
+.insurance_des{margin-left: 0;width: 100%;}
+.insurance_des .big{font-size: 24px;margin:30px 0 15px;}
+.insurance_des ul{padding-left: 20px;}
+
+/* UNDER PAGE */
+.top_info{height: 100vh;min-height: 500px;}
+.top_info h2{font-size: 32px;}
+.breadcrumbs{margin-bottom: 30px;}
+
+/* CONTACT PAGE */
+.contact_content{margin-top: 0;}
+.contact_content .inner{flex-wrap: wrap;}
+.contact_form{width: 100%;margin-top: 30px;}
+.contact_content .ttl{width: 100%;}
+
+/* PROJECT PAGE */
+.project_tab{margin-bottom: 30px;}
+.project_tab .tabs li{font-size: 16px;margin:0 20px 0 0;}
+.project_tab .tabs li:last-child{margin-right: 0;}
+
+.project_list_content ul{justify-content: space-between;}
+.project_list_content ul li{width: calc((100vw - 50px) / 2);margin: 0 0 20px;}
+.project_list_content ul li:nth-child(2n+ 2){margin-right: 0;}
+.project_list_content ul li .locate{font-size: 18px;}
+.project_list_content ul li .des{padding: 0 15px;}
+
+.tab-content{left: 15px;top: 56px;}
+.tab-content.current{left: 0;}
+
+.project_des{margin-bottom: 30px;}
+.project_des h3{font-size: 28px;}
+.project_gallery ul{justify-content: space-between;}
+.project_gallery ul li{width: calc((100vw - 50px) / 2);margin: 0 0 20px;}
+.project_gallery ul li:nth-child(2n+ 2){margin-right: 0;}
+
+/* DESIGN PAGE */
+.design_list{margin-top: 0;}
+.design_list ul li{width: calc((100vw - 50px) /2);margin: 0 0 20px;}
+.design_list ul li .des{font-size: 18px;}
+
+.design_detail_content .inner{justify-content: center;}
+.design_post{width: 100%;}
+.design_post_ct h3{font-size: 20px;}
+.design_post_ct .bold{font-size: 18px;}
+
+.design_related{margin-top: 50px;}
+
+}   
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+.sp480{display: block;}
+
+.ttl h3{font-size: 4.5vw;}
+.ttl h3::after{display: none;}
+
+.sec_about_ct .title{font-size: 8vw;}
+.sec_about_ct .des::before{width: 265px;height: 203px;top: calc(50% - 100px);left: calc(50% - 130px);}
+
+.sec_why_list ul li{font-size: 14px;}
+.sec_why_list ul li .des{text-align: center}
+.sec_why_list ul li .numb{margin:0;font-size: 20px;}
+.sec_why_list ul li .icon{margin-right: 10px;}
+
+.sec_project .ttl a{position: relative;top: inherit;right:0;display: block;text-align: right;margin-top: 15px;}
+
+/* SERVIEC PAGE */
+.service_top .title{font-size: 8vw;}
+.our_service_list dl{width: 100%;margin-bottom: 50px;}
+.our_service_list dl:last-child{margin-bottom: 0;}
+.our_service_list dt{margin-bottom: 40px;}
+
+.service_step ul li .des{}
+.insurance_des .big{font-size: 5vw;}
+
+
+/* FOOTER  */
+footer .foot_slogan{flex-wrap: wrap;}
+footer .foot_slogan .f_logo{margin: 0 0 15px;}
+
+/* UNDER PAGE */
+.project_list_content ul li .info span::before,
+.top_info .pj_info span::before{width: 6px;height: 6px;top: calc(50% - 3px);}
+.project_list_content ul li .info span,
+.top_info .pj_info span{margin-right: 10px;padding-right: 15px;}
+
+/* CONTACT PAGE */
+.contact_form_box dl{width: 100%;}
+.contact_form_box dt{font-size: 14px;margin-bottom: 5px;}
+.contact_form_box dd select{font-size: 14px;}
+
+/* PROJECT PAGE */
+.project_list_content ul li{width: 100%;}
+.project_list_content ul li:last-child{margin-bottom: 0;}
+.project_list_content ul li .info .style{display: block;}
+
+.design_list ul li{width: 100%;}
+.design_list ul li:last-child{margin-bottom: 0;}
+
+
+}
+
+
+/* SMALL MOBILE - Iphone 5 */
+@media screen and (max-width: 360px) {
+
+}
+
