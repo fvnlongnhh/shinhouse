@@ -218,7 +218,7 @@ footer .foot_info .sns a{width: 48px;display: inline-block;margin-right: 15px;}
 .service_top{height: 540px;background: url('../images/service_bg.jpg') center /cover no-repeat;display: flex;align-items: flex-end;padding-bottom: 40px;}
 .service_top::before{display: none;}
 .service_top .title{color: #fff;font-size: 48px;line-height: 1.25em;font-weight: 500;}
-.service_top .title span{color: #fff;font-size: 110%;font-weight: 600;}
+.service_top .title span{font-size: 110%;font-weight: 600;}
 
 .our_service{background-color: var(--bgw);padding-bottom: 45px;}
 .our_service::after{background: url('../images/service_ic_bg.png') center /cover no-repeat;width: 356px;height: 300px;content: '';position: absolute;bottom: 10px;left: 0;}
